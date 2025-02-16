@@ -1,4 +1,4 @@
-: Empowering Health with AI: Building a Calorie Advisor App
+Empowering Health with AI: Building a Calorie Advisor App
 In today’s fast-paced world, maintaining a balanced diet and monitoring nutritional intake can be challenging. To address this, I recently developed a Calorie Advisor App—a web application that leverages advanced AI technology to analyze food images, estimate calorie content, and offer nutritional insights. Here’s a deep dive into the project, its architecture, and the development process.
 ________________________________________
 Project Overview
@@ -13,16 +13,16 @@ ________________________________________
 System Architecture
 The Calorie Advisor App follows a simple yet robust architecture that includes the following components:
 1.	Frontend (User Interface):
-o	Streamlit: A Python-based framework that simplifies the development of interactive web applications. The UI provides an image upload feature, displays the selected image, and shows the analysis results.
-o	PIL (Python Imaging Library): Used for image processing, ensuring that uploaded images are handled correctly before being sent for analysis.
-2.	Backend:
-o	Google Gemini Pro Vision API: This AI service is the core of the application. Once an image is uploaded, the backend sends the image (along with a detailed prompt) to the API, which returns the nutritional analysis.
-o	Python-dotenv: Manages environment variables (e.g., API keys), keeping sensitive information secure.
-o	Custom Functions: 
-	input_image_setup(): Converts the uploaded image into a format suitable for API consumption.
-	get_gemini_response(): Interacts with the API by sending the user-defined prompt and image data, then processes the API’s response.
-3.	Deployment:
-o	The application is deployed locally using Streamlit and can be later adapted to cloud services for broader accessibility.
+   Streamlit: A Python-based framework that simplifies the development of interactive web applications. The UI provides an image upload feature, displays the selected image, and shows the analysis results.
+   PIL (Python Imaging Library): Used for image processing, ensuring that uploaded images are handled correctly before being sent for analysis.
+3.	Backend:
+   Google Gemini Pro Vision API: This AI service is the core of the application. Once an image is uploaded, the backend sends the image (along with a detailed prompt) to the API, which returns the nutritional analysis.
+   Python-dotenv: Manages environment variables (e.g., API keys), keeping sensitive information secure.
+   Custom Functions: 
+   input_image_setup(): Converts the uploaded image into a format suitable for API consumption.
+   get_gemini_response(): Interacts with the API by sending the user-defined prompt and image data, then processes the API’s response.
+4.	Deployment:
+   The application is deployed locally using Streamlit and can be later adapted to cloud services for broader accessibility.
 ________________________________________
 Implementation Details
 Development Environment:
